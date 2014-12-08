@@ -1,4 +1,4 @@
-Primality Test
+Miller Rabin test - PrimalityTest
 ===============
 University task.
 
