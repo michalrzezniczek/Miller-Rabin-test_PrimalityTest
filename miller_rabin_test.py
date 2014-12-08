@@ -46,12 +46,12 @@ def miller_rabin_test(testing_number):
     sequence_element = modularPower(a, q, testing_number)
     #print "%d^{%d} mod(%d) = %d" % (a, q, testing_number, sequence_element)
     if (sequence_element == 1) or (sequence_element == (testing_number - 1)):
-        return 1 #is prime number
+        return 1 #testing_number probably is prime number
     j = 2
     while (j <= d) and (sequence_element != (testing_number - 1)):
         sequence_element = modularPower(sequence_element, 2, testing_number)
         print "%d^{%d} mod(%d) = %d" % (a, q*j, testing_number, sequence_element)
         if sequence_element == (-1 % testing_number):
-            return 1 #is prime number
+            return 1 #testing_number probably is prime number
         j += 1
     return 0 #is not prime number
