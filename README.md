@@ -16,7 +16,5 @@ Implemented (in Python) Miller-Rabin test and fast modular exponentiation.
     else:
     	print "%d is wrong number"
 ```
-2. Output:
-   -1 	<=> wrong testing_number. E.g. testing_number less than 2
-	0 	<=> testing_number is not a prime number
+2. Output:[ ]-1 	<=> wrong testing_number. E.g. testing_number less than 20 	<=> testing_number is not a prime number
 	1 	<=> testing_number probably is a prime number
